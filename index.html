@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Survey Form">
+        <meta name="author" content="Gregory Davis">
+
+
+        <title>Survey Form Template</title>
+
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+
+    <body>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+        <div id="container">
+            <h1 id="title">Guest Evaluation Survey</h1>
+            <p id="description">Let us know how we are doing.</p>
+
+            <form id="survey-form">
+                <label id="name-label" for="name-input">Name </label>
+                <input type="text" name="name-input" id="name" required placeholder="Last, First, MI">
+
+                <label id="email-label" for="email-input">Email </label>
+                <input type="email" name="email-input" id="email" required placeholder="John@email.com">
+
+                <label id="number-label" for="stay-length">Length of Stay</label>
+                <input type="number" name="stay-length" id="number" min="1" max="31" placeholder="Nights">
+
+                
+                <label for="month">Month of Visit?</label>
+                <select name="month" id="dropdown">
+                    <option value="" selected="selected">Select One</option>
+                    <option value="1" >January</option>
+                    <option value="2" >February</option>
+                    <option value="3" >March</option>
+                    <option value="4" >April</option>
+                    <option value="5" >May</option>
+                    <option value="6" >June</option>
+                    <option value="7" >July</option>
+                    <option value="8" >August</option>
+                    <option value="9" >September</option>
+                    <option value="10" >October</option>
+                    <option value="11" >November</option>
+                    <option value="12" >December</option>
+                </select>
+
+                <fieldset>
+                    <legend>Please check the reasons for choosing us</legend>
+                    
+                    <ul>
+                        <li><label><input name="reasons" value="1" type="checkbox" id="reason_1">Hotel facilities</label></li>
+                        <li><label><input name="reasons" value="2" type="checkbox" id="reason_2">I saw advertising</label></li>
+                        <li><label><input name="reasons" value="3" type="checkbox" id="reason_3">I like the environment</label></li>
+                        <li><label><input name="reasons" value="4" type="checkbox" id="reason_4">Staff courtesy and friendliness</label></li>
+                        <li><label><input name="reasons" value="5" type="checkbox" id="reason_5">I have stayed here before</label></li>
+                        <li><label><input name="reasons" value="6" type="checkbox" id="reason_6">Recommended by a friend/relative</label></li>
+                        <li><label><input name="reasons" value="7" type="checkbox" id="reason_7">Room rate/package price</label></li>
+                        <li><label><input name="reasons" value="8" type="checkbox" id="reason_8">The location</label></li>
+                        <li><label><input name="reasons" value="9" type="checkbox" id="reason_9">Only one available</label></li>
+                        <li><label><input name="reasons" value="10" type="checkbox" id="reason_10">Special event held here</label></li>
+                        <li><label><input name="reasons" value="11" type="checkbox" id="reason_11">My organization chose the hotel</label></li>
+                        <li><label><input name="reasons" value="12" type="checkbox" id="reason_12">Other</label></li>
+                    </ul>
+                </fieldset>
+               
+                <fieldset>
+                    <legend>How was your room on arrival?</legend>
+
+                    <label> <input type="radio" name="room" id="room_1" required value="1"> Excellent </label>
+                    <label> <input type="radio" name="room" id="room_2" required value="2"> Good </label>
+                    <label> <input type="radio" name="room" id="room_3" required value="3"> Fair </label>
+                    <label> <input type="radio" name="room" id="room_4" required value="4"> Poor </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Overall, how professional were the hotel staff?</legend>
+
+                    <label> <input type="radio" name="staff" id="staff_1" required value="1"> Excellent </label>
+                    <label> <input type="radio" name="staff" id="staff_2" required value="2"> Good </label>
+                    <label> <input type="radio" name="staff" id="staff_3" required value="3"> Fair </label>
+                    <label> <input type="radio" name="staff" id="staff_4" required value="4"> Poor </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Overall, how satisfied were you with your stay?</legend>
+
+                    <label> <input type="radio" name="satisfaction" id="satisfaction_1" required value="1"> Excellent </label>
+                    <label> <input type="radio" name="satisfaction" id="satisfaction_2" required value="2"> Good </label>
+                    <label> <input type="radio" name="satisfaction" id="satisfaction_3" required value="3"> Fair </label>
+                    <label> <input type="radio" name="satisfaction" id="satisfaction_4" required value="4"> Poor </label>
+                </fieldset>
+
+                <fieldset>
+                        <legend>Additional comments?</legend>
+                        <textarea name="comments" id="comments" maxlength="500"></textarea>
+                </fieldset>
+               
+                <button id="submit">Submit Survey</button>
+            </form>
+        </div>
+
+
+    </body>
+</html>
